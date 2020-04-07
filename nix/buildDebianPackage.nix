@@ -17,7 +17,6 @@ with lib;
 
 { nativeBuildInputs ? []
 , buildFlags ? []
-, dhSub ? false
 , ...
 } @ args:
 stdenv.mkDerivation (args // {
@@ -25,9 +24,10 @@ stdenv.mkDerivation (args // {
   nativeBuildInputs = [
     dpkg
     debhelper
+    dh-autoreconf
     fakeroot
 
-  ] ++ (optionals (!dhSub) [ dh-autoreconf ]) ++ nativeBuildInputs;
+  ] ++ nativeBuildInputs;
 
   buildPhase = ''
     patchShebangs debian # mainly because of debian/rules, though there are all sorts of things in there

@@ -12,6 +12,7 @@
 , autoconf
 , automake
 , libtool
+, dh-autoreconf
 }:
 
 # http://deb.debian.org/debian/pool/main/d/debhelper/debhelper_12.10.tar.xz
@@ -62,7 +63,7 @@ stdenv.mkDerivation rec {
     ''
       for i in $out/bin/*; do
         if head -n 1 $i | grep -q perl; then
-          wrapProgram $i --prefix PERL5LIB : $out/${perl.libPrefix}
+          wrapProgram $i --prefix PERL5LIB : $out/${perl.libPrefix}:${dh-autoreconf}/${perl.libPrefix}
         fi
       done
 
