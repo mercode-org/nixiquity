@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-prep",
+  "rev": "ca43dc1b1bd3cb99b62fd1a91094a825587acccc",
+  "date": "2018-08-28T13:46:33+02:00",
+  "sha256": "1nj4sykf11pyj3aidgplqqwvaivg6bnnf7n715z4ivb301xkf7mv",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "36"
+}

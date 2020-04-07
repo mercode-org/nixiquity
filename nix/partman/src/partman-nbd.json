@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-nbd",
+  "rev": "31fbcab31c141a3559a29b60fc5c08b892f28573",
+  "date": "2020-02-02T19:27:17+01:00",
+  "sha256": "0d2bmm7lvy8hcv1yn5zniy10na0p28b06dn7jblilnqqrm1xkjkb",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "0.62"
+}

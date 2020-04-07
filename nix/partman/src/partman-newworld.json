@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-newworld",
+  "rev": "87d8c41fa73578a30d479f49d2479ba75b221ee6",
+  "date": "2017-12-10T20:31:09+01:00",
+  "sha256": "052b3zcw4j6ylbhg66fi3hvipfqdzq6x7i4rm24zg0j36zrrzqav",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "36"
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-target",
+  "rev": "520a54a3182da5aa20b5759f3de91d3511107ede",
+  "date": "2020-01-28T22:52:17+01:00",
+  "sha256": "08z1ipbihpgg6qv56bqj5mq5vc94y60iqjhbm64rqvlazbkcjnf0",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "117"
+}

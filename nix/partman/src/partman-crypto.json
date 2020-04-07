@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-crypto",
+  "rev": "717ff70381320afde8b477e500f67901fb5f9bb5",
+  "date": "2019-11-28T10:50:31+01:00",
+  "sha256": "0ia5cnai90dv9mbc370jfcwz4pfwgyrj9njgj3cddn8d5xz1gvxa",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "106"
+}

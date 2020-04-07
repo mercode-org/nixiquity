@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-btrfs",
+  "rev": "47ba9425c73d2f5e43f62bf47b45ae6463fda857",
+  "date": "2019-11-13T23:26:57+01:00",
+  "sha256": "0ldd2lrsbnjmdgfldfj96ygz0nv5pd35vld30ddihw0z39dwyfmg",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "50"
+}

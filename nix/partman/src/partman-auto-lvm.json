@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-auto-lvm",
+  "rev": "a3716b54994b265391b5ac2929c2af90c4da9a8f",
+  "date": "2020-01-31T23:24:28+01:00",
+  "sha256": "0rzk6a103l0ild77ajfsd5pdjly4xwfhn7z9d6sg1vbi5c1g2gqz",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "79"
+}

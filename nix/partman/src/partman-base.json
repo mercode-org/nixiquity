@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-base",
+  "rev": "ffd7338f4ae8b8966ce40cf5b5dc368d6328c37e",
+  "date": "2019-10-13T21:59:15+02:00",
+  "sha256": "0vda1pqjxv47wsxjhqa39pzp6x9pshsrg0lch0448s0xchd9z6nl",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "209"
+}

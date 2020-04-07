@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-auto-crypto",
+  "rev": "79900597fc6905affdbc965874c4f74a381a97cf",
+  "date": "2019-10-19T23:41:32+02:00",
+  "sha256": "0mxww46n456m8c0h1kmfxr0068c0zcvrqq55ydvl7j1n55i5m1va",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "31"
+}

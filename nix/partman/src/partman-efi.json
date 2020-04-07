@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-efi",
+  "rev": "4fd339cfb26fcb1df789223d88c054a5cc1884c8",
+  "date": "2013-01-18T11:08:54+00:00",
+  "sha256": "08ypr5k6lnx5h0gg5c0rg03q6znvajkwlffcrnw9w4lahkklic8w",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "83"
+}

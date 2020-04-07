@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-md",
+  "rev": "cf7bdcf72803c28fdebed5894150fe5c2168dc30",
+  "date": "2008-08-25T19:43:13+00:00",
+  "sha256": "0y6adjp2va6qnqn38141iqn1199lxfcq288dlsn1rajbjv5yr5q8",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "93"
+}

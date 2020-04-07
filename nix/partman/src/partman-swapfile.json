@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-swapfile",
+  "rev": "cfccefb3fbf51a43e3b7998576a6e3935dbd647b",
+  "date": "2016-11-18T12:56:14+00:00",
+  "sha256": "032jm1dnkagnbxznjcl2a5gb7vdw6z18iihgbszxf9cgk9nc0mz7",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "1"
+}

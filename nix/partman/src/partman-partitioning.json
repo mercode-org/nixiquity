@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-partitioning",
+  "rev": "032351c0486bb6307e5e63a7207b82b5a9b5e699",
+  "date": "2020-01-29T19:29:47+01:00",
+  "sha256": "1w16f57mj659zwmchsa8xqm1hs7kkdvg21k0w7bv33qcn8if0yrh",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "132"
+}

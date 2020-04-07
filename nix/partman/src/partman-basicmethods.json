@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-basicmethods",
+  "rev": "0772584ded6f87af5c34150ba0ac6e7ab11ed43b",
+  "date": "2019-10-19T23:48:30+02:00",
+  "sha256": "0vvzkm4h24b6xxyy9lyfi2xssy8xkh2jg84awq7qfny5bbdy8x6z",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "70"
+}

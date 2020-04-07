@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-multipath",
+  "rev": "5568101d91fe9e68a68d9eb4ca78d91c9f343c80",
+  "date": "2008-03-26T09:22:12+00:00",
+  "sha256": "09069jnysl443v124l1kaq8klsxf98kjc7climvvzqdsnn591c79",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "6"
+}

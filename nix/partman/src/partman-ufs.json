@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-ufs",
+  "rev": "c5e396132f61f48558dd8ba865be0f061b147e21",
+  "date": "2013-08-17T15:21:20+02:00",
+  "sha256": "05p5lr5b546hjv13cpvmw3nrmazbfvgz92fjl084n0a0ysf66pcg",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "21"
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-auto",
+  "rev": "79d041f7f9d39f03e7c551128c691317d098d193",
+  "date": "2020-03-07T21:16:38+01:00",
+  "sha256": "0na7yk8bzs4ar6jdqhx3f3x7pp6gqa198y19zypzikx9ykj4lk32",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "151"
+}

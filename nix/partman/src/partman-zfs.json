@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-zfs",
+  "rev": "c8693ae5853b9861501dc63e5973e8692ee2b34f",
+  "date": "2017-12-04T07:10:52+01:00",
+  "sha256": "1i8xg8mhwsj2fb6vv1ncbbsbipqc7p0sqb3szbyvw6wxnm43m06z",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "56"
+}

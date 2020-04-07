@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-jfs",
+  "rev": "1fe2142e256eee738c24f26053a2af660512a5bd",
+  "date": "2007-02-27T17:23:26+00:00",
+  "sha256": "01sjksjd158v9pdkrm6jhj469dcqlbry5w470v04l6nls7d71700",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "58"
+}

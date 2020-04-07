@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-iscsi",
+  "rev": "dab6b26a9c22d01c0d87cc08bc2326c4b9980763",
+  "date": "2017-06-30T05:55:19+02:00",
+  "sha256": "1zhyjkb4g9cqcvxqbazjff297g59h8sv4wcdjb98nf863m6108i5",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "63"
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-basicfilesystems",
+  "rev": "8f735f111c779e06531e3c3b346a75e07dd49d2d",
+  "date": "2019-12-20T19:48:59+01:00",
+  "sha256": "1mfs6adb5jqz3js4zjidxyfmwrgpcm6fsyjv0l786j9hn930fjg6",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "150"
+}

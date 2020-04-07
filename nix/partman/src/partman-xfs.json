@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-xfs",
+  "rev": "578e91c0cc5791791e5a46fc9a4b8ef05530ee6b",
+  "date": "2015-11-08T15:17:57+00:00",
+  "sha256": "03w6rii1ycsxfl5xw5whhbdkj4n89hjr58whg3fbdsb585ay1v0q",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "66"
+}

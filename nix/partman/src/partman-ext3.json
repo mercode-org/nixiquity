@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-ext3",
+  "rev": "a7aedf1a364921e41fccdb13940f5d50d25dde80",
+  "date": "2019-10-19T23:55:22+02:00",
+  "sha256": "1rqzfwqnmkyg2mw119w3k1ixg0lnsr8izw83mdxjzb84km9cr54s",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "104"
+}

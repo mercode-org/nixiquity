@@ -3,8 +3,8 @@
 , fakeroot
 }:
 
-{
-  nativeBuildInputs ? []
+{ nativeBuildInputs ? []
+, ...
 } @ args:
 stdenv.mkDerivation (args // {
 
@@ -14,6 +14,7 @@ stdenv.mkDerivation (args // {
   ] ++ nativeBuildInputs;
 
   buildPhase = ''
+    patchShebangs debian/rules
     dpkg-buildpackage -d
   '';
 

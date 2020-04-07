@@ -1,0 +1,10 @@
+{
+  "url": "https://salsa.debian.org/installer-team/partman-auto-raid",
+  "rev": "30c7396f5ff152c553737c3618fac14cf7095cc4",
+  "date": "2020-01-28T22:33:09+01:00",
+  "sha256": "0bgdx6a6qj8ida9g4vixsvx88yr2f0aczmjh8v21apwp3md52g4s",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false,
+  "ver": "43"
+}
