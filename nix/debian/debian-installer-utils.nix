@@ -1,6 +1,7 @@
 { stdenv
 , fetchurl
 , libdebian-installer
+, srcUrl
 }:
 
 stdenv.mkDerivation rec {
@@ -8,7 +9,7 @@ stdenv.mkDerivation rec {
   version = "1.133";
 
   src = fetchurl {
-    url = "https://deb.debian.org/debian/pool/main/d/debian-installer-utils/debian-installer-utils_${version}.tar.xz";
+    url = srcUrl pname version;
     sha256 = "160wzjk8dmm7k790ly4z7hz6p43l7qh23yp0c49mhap7rysy3m6m";
   };
 

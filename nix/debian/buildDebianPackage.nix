@@ -34,9 +34,14 @@ let
   dh-strip-nondeterminism = strip-nondeterminism.overrideAttrs(attr: attr // { perlPostHook = "true"; });
   dpkg-deb-stub = writeShellScriptBin "dpkg-deb" ''
 
-echo "$2" >> ${outdirs} # add the folder to the list of folders to copy
-exec ${dpkg}/bin/dpkg-deb "$@"
+# add the folder to the list of folders to copy
+for f in "$@"; do
+  if [ -d "$f" ] &&  [[ "$f" == "debian/"* ]]; then
+    echo "$f" >> ${outdirs}
+  fi
+done
 
+exec ${dpkg}/bin/dpkg-deb "$@"
 '';
   dpkg-genbuildinfo-stub = writeShellScriptBin "dpkg-genbuildinfo" ""; # tries to access the /var/lib/dpkg/status db, also we don't really need it
 in

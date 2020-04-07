@@ -13,16 +13,15 @@
 , automake
 , libtool
 , dh-autoreconf
+, srcUrl
 }:
-
-# http://deb.debian.org/debian/pool/main/d/debhelper/debhelper_12.10.tar.xz
 
 stdenv.mkDerivation rec {
   pname = "debhelper";
   version = "12.10";
 
   src = fetchurl {
-    url = "mirror://debian/pool/main/d/debhelper/debhelper_${version}.tar.xz";
+    url = srcUrl pname version;
     sha256 = "0sk774jcaqjy2pkafzvcvgx6b2nhx0x6nizrakcch6ha7prndvvl";
   };
 
