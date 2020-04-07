@@ -119,15 +119,10 @@ class PageGtk(PageBase):
         from ubiquity.gtkwidgets import Builder
         builder = Builder()
         self.controller.add_builder(builder)
-        builder.add_from_file(os.path.join(
-            os.environ['UBIQUITY_GLADE'], 'stepPartAsk.ui'))
-        builder.add_from_file(os.path.join(
-            os.environ['UBIQUITY_GLADE'], 'stepPartAuto.ui'))
-        builder.add_from_file(os.path.join(
-            os.environ['UBIQUITY_GLADE'], 'stepPartAdvanced.ui'))
-        builder.add_from_file(os.path.join(
-            os.environ['UBIQUITY_GLADE'], 'stepPartCrypto.ui'))
-        builder.connect_signals(self)
+        builder.add_from_file(self.controller.glade_file('stepPartAsk.ui'))
+        builder.add_from_file(self.controller.glade_file('stepPartAuto.ui'))
+        builder.add_from_file(self.controller.glade_file('stepPartAdvanced.ui'))
+        builder.add_from_file(self.controller.glade_file('stepPartCrypto.ui'))
 
         self.page_ask = builder.get_object('stepPartAsk')
         self.page_auto = builder.get_object('stepPartAuto')

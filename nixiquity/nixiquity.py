@@ -15,6 +15,9 @@ class Installer:
         self.builder.add_from_file('%s/ubiquity.ui' % UIDIR)
         self.builder.connect_signals(self)
 
+        self.LIBDIR = LIBDIR
+        self.UIDIR = UIDIR
+
         self.window = self.builder.get_object("live_installer")
         self.window.show()
         self.quit_warning = self.builder.get_object("warning_dialog")
@@ -34,6 +37,10 @@ class Installer:
         # self.set_focus()
         Gtk.main()
         # self.pending_quits = max(0, self.pending_quits - 1)
+
+    # util
+    def glade_file(self, file):
+        return "%s/%s" % (self.UIDIR, file)
 
 def main():
     installer = Installer()
