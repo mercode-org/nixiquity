@@ -14,7 +14,7 @@ setup(
     package_data={'nixiquity': ['glade/*.ui']},
     entry_points={
         'console_scripts': [
-            'nixiquity=nixiquity:main',
+            'nixiquity=nixiquity.nixiquity:main',
         ],
     },
 )

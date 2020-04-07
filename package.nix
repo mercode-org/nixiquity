@@ -1,9 +1,10 @@
 { stdenv
 , fetchurl
+, python3
 , gtk3
+, glib
 , gobject-introspection
 , wrapGAppsHook
-, python3
 }:
 
 python3.pkgs.buildPythonApplication rec {
@@ -14,6 +15,7 @@ python3.pkgs.buildPythonApplication rec {
 
   buildInputs = [
     gtk3
+    glib
     gobject-introspection
     wrapGAppsHook
   ];
@@ -21,6 +23,8 @@ python3.pkgs.buildPythonApplication rec {
   propagatedBuildInputs = with python3.pkgs; [
     pygobject3
   ];
+
+  doCheck = false;
 
   meta = with stdenv.lib; {
     description = "merOS nixOS installer";
