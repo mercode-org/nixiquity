@@ -1,2 +1,2 @@
 with (import <nixpkgs> { });
-callPackage ./package.nix { }
+callPackage ./nix { }

@@ -5,19 +5,25 @@
 , glib
 , gobject-introspection
 , wrapGAppsHook
+, callPackage
+, libdebian-installer
+, debian-installer-utils
 }:
 
 python3.pkgs.buildPythonApplication rec {
   name = "nixiquity-${version}";
   version = "0.0.1";
 
-  src = ./.;
+  src = ./..;
 
   buildInputs = [
     gtk3
     glib
     gobject-introspection
     wrapGAppsHook
+
+    libdebian-installer
+    debian-installer-utils
   ];
 
   propagatedBuildInputs = with python3.pkgs; [
