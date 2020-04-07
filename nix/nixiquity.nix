@@ -6,8 +6,7 @@
 , gobject-introspection
 , wrapGAppsHook
 , callPackage
-, libdebian-installer
-, debian-installer-utils
+, debian
 }:
 
 python3.pkgs.buildPythonApplication rec {
@@ -22,8 +21,8 @@ python3.pkgs.buildPythonApplication rec {
     gobject-introspection
     wrapGAppsHook
 
-    libdebian-installer
-    debian-installer-utils
+    debian.libdebian-installer
+    debian.debian-installer-utils
   ];
 
   propagatedBuildInputs = with python3.pkgs; [

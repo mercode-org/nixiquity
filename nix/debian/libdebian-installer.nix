@@ -6,6 +6,7 @@
 , perl
 , dpkg
 , check
+, srcUrl
 }:
 
 stdenv.mkDerivation rec {
@@ -13,7 +14,7 @@ stdenv.mkDerivation rec {
   version = "0.120";
 
   src = fetchurl {
-    url = "https://deb.debian.org/debian/pool/main/libd/libdebian-installer/libdebian-installer_${version}.tar.xz";
+    url = srcUrl pname version;
     sha256 = "1d4kfyw40i05fp118m8p657k7zj2xfncwj2vhb20g85wz1728sj2";
   };
 

@@ -13,9 +13,8 @@
 , automake
 , libtool
 , debhelper
+, srcUrl
 }:
-
-# http://deb.debian.org/debian/pool/main/d/debhelper/debhelper_12.10.tar.xz
 
 stdenv.mkDerivation rec {
   dhSub = true;
@@ -24,7 +23,7 @@ stdenv.mkDerivation rec {
   version = "19";
 
   src = fetchurl {
-    url = "mirror://debian/pool/main/d/dh-autoreconf/dh-autoreconf_${version}.tar.xz";
+    url = srcUrl pname version;
     sha256 = "1yqqkqd7n0r147plp8dcm77cymp0rcrpwh1xp5p2lxls7jvzxmyn";
   };
 

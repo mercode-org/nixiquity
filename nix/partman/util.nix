@@ -1,7 +1,7 @@
 { callPackage
 , buildDebianPackage
 , fetchgit
-, dh-di
+, debian
 }:
 
 {
@@ -17,7 +17,7 @@
       version = src.ver;
 
       nativeBuildInputs = [
-        dh-di
+        debian.dh-di
       ];
 
       src = fetchgit {

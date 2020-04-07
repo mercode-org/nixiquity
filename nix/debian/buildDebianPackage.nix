@@ -21,6 +21,12 @@
   Am I even reading this right?
 
   *dpkg on nix*
+
+  Ideally this would install things directly into $out
+  and integrate with existing things (autoreconfHook for ex)
+
+  That way everything that's already on debian but not on
+  nixpkgs could be ported en-mass
 */
 
 let
@@ -28,11 +34,11 @@ let
   dh-strip-nondeterminism = strip-nondeterminism.overrideAttrs(attr: attr // { perlPostHook = "true"; });
   dpkg-deb-stub = writeShellScriptBin "dpkg-deb" ''
 
-echo "$2" >> ${outdirs}
+echo "$2" >> ${outdirs} # add the folder to the list of folders to copy
 exec ${dpkg}/bin/dpkg-deb "$@"
 
 '';
-  dpkg-genbuildinfo-stub = writeShellScriptBin "dpkg-genbuildinfo" "";
+  dpkg-genbuildinfo-stub = writeShellScriptBin "dpkg-genbuildinfo" ""; # tries to access the /var/lib/dpkg/status db, also we don't really need it
 in
 
 with lib;
@@ -76,6 +82,8 @@ stdenv.mkDerivation (args // {
 
     export PERL5LIB="$PERL5LIB:${lib.makeSearchPath perl.libPrefix ([ debhelper dh-autoreconf dh-strip-nondeterminism ] ++ nativeBuildInputs)}"
 
+    # -d: ignore dependencies
+    # -b: ignore source
     dpkg-buildpackage -d --no-sign -b ${lib.escapeShellArgs buildFlags}
   '';
 

@@ -14,6 +14,7 @@
 , libtool
 , dh-autoreconf
 , buildDebianPackage
+, srcUrl
 }:
 
 buildDebianPackage rec {
@@ -22,7 +23,7 @@ buildDebianPackage rec {
   version = "1.0.21";
 
   src = fetchurl {
-    url = "mirror://debian/pool/main/p/po-debconf/po-debconf_${version}.tar.xz";
+    url = srcUrl pname version;
     sha256 = "0j5p13qy71wnfnycgzfg34zmlvpykqysr5l3vc5z0qc3wzni6df6";
   };
 

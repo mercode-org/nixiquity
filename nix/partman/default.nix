@@ -1,11 +1,8 @@
 { pkgs, lib }:
 
 lib.makeScope pkgs.newScope (self: with self; {
-  buildDebianPackage = callPackage ../buildDebianPackage.nix { };
-  debconf = callPackage ../debconf.nix { };
-  debhelper = callPackage ../debhelper.nix { };
-  dh-autoreconf = callPackage ../dh-autoreconf.nix { };
-  dh-di = callPackage ../dh-di.nix { };
+  debian = callPackage ../debian { };
+  buildDebianPackage = debian.buildDebianPackage;
 
   util = callPackage ./util.nix { };
 

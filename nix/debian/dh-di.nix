@@ -13,6 +13,7 @@
 , automake
 , libtool
 , debhelper
+, srcUrl
 }:
 
 stdenv.mkDerivation rec {
@@ -22,7 +23,7 @@ stdenv.mkDerivation rec {
   version = "10";
 
   src = fetchurl {
-    url = "mirror://debian/pool/main/d/dh-di/dh-di_${version}.tar.xz";
+    url = srcUrl pname version;
     sha256 = "0bc1lj3i7npr8xw1vbcdkp1142nj8wvl08kqjg275qsjs2b51xgk";
   };
 
