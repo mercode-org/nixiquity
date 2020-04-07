@@ -7,8 +7,8 @@
 }:
 
 python3.pkgs.buildPythonApplication rec {
-  name = "zim-${version}";
-  version = "0.72.1";
+  name = "nixiquity-${version}";
+  version = "0.0.1";
 
   src = ./.;
 
@@ -16,7 +16,6 @@ python3.pkgs.buildPythonApplication rec {
     gtk3
     gobject-introspection
     wrapGAppsHook
-    gnome3.adwaita-icon-theme
   ];
 
   propagatedBuildInputs = with python3.pkgs; [
