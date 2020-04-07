@@ -4,6 +4,12 @@
 , debhelper
 , lib
 , dh-autoreconf
+, perl
+, autoconf
+, automake
+, gettext
+, libtool
+, pkgconfig
 }:
 
 /*
@@ -27,6 +33,12 @@ stdenv.mkDerivation (args // {
     dh-autoreconf
     fakeroot
 
+    autoconf
+    automake
+    gettext
+    libtool
+    pkgconfig
+
   ] ++ nativeBuildInputs;
 
   buildPhase = ''
@@ -34,6 +46,8 @@ stdenv.mkDerivation (args // {
     find debian -type f -exec sed -i \
       -e s,/usr/share/dpkg,${dpkg}/share/dpkg,g \
       {} +
+
+    export PERL5LIB="$PERL5LIB:${lib.makeSearchPath perl.libPrefix ([ debhelper dh-autoreconf ] ++ nativeBuildInputs)}"
 
     dpkg-buildpackage -d ${lib.escapeShellArgs buildFlags}
   '';

@@ -5,6 +5,7 @@ lib.makeScope pkgs.newScope (self: with self; {
   debconf = callPackage ./debconf.nix { };
   debhelper = callPackage ./debhelper.nix { };
   dh-autoreconf = callPackage ./dh-autoreconf.nix { };
+  dh-di = callPackage ./dh-di.nix { };
 
   debian-installer-utils = callPackage ./debian-installer-utils.nix { };
   libdebian-installer = callPackage ./libdebian-installer.nix { };

@@ -34,6 +34,10 @@ stdenv.mkDerivation rec {
   # we can't "buildDebianPackage", because debhelper is a dependency of that
 
   patchPhase = ''
+    find . -type f -exec sed -i \
+      -e s,--prefix=/usr,--prefix=''${out},g \
+      {} +
+
     patchShebangs .
   '';
 
@@ -61,11 +65,12 @@ stdenv.mkDerivation rec {
 
   postInstall =
     ''
-      for i in $out/bin/*; do
-        if head -n 1 $i | grep -q perl; then
-          wrapProgram $i --prefix PERL5LIB : $out/${perl.libPrefix}:${dh-autoreconf}/${perl.libPrefix}
-        fi
-      done
+      # This breaks the binary name. We're setting the lib path already in buildDebianPackage
+      #for i in $out/bin/*; do
+      #  if head -n 1 $i | grep -q perl; then
+      #    wrapProgram $i --prefix PERL5LIB : $out/${perl.libPrefix}:${dh-autoreconf}/${perl.libPrefix}
+      #  fi
+      #done
 
       # mkdir -p $out/etc/dpkg
       # cp -r scripts/t/origins $out/etc/dpkg
